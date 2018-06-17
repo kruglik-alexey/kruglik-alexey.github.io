@@ -4,9 +4,9 @@
             window.addEventListener('error', function(error) {
                 console.log(error.message);
             });
-            eval('setTimeout(function(){null.foo();}, 500);');
-            eval('setTimeout(function(){null.foo();}, 500);\n//# sourceURL=http://example.com/foo.js');
-            eval('setTimeout(function(){null.foo();}, 500);\n//# sourceURL=https://kruglik-alexey.github.io/foo.js');
+            eval('setTimeout(function(){null.foo();}, 100);');
+            eval('setTimeout(function(){null.foo();}, 200);\n//# sourceURL=http://example.com/foo.js');
+            eval('setTimeout(function(){null.foo();}, 300);\n//# sourceURL=https://kruglik-alexey.github.io/foo.js');
         </script>
     </body>
 </html>

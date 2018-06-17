@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <script type="text/javascript" crossorigin="anonymous">
+            window.addEventListener('error', function(error) {
+                console.log(error.message);
+            });
+            eval('setTimeout(function(){null.foo();}, 500);');
+            eval('setTimeout(function(){null.foo();}, 500);\n//# sourceURL=http://example.com/foo.js');
+        </script>
+    </body>
+</html>

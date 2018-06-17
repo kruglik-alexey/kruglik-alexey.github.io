@@ -2,7 +2,7 @@
     <body>
         <script type="text/javascript" crossorigin="anonymous">
             window.addEventListener('error', function(error) {
-                console.log(error.message);
+                console.log(error.message + ' in ' + error.filename);
             });
             eval('setTimeout(function(){null.foo();}, 100);');
             eval('setTimeout(function(){null.foo();}, 200);\n//# sourceURL=http://example.com/foo.js');
